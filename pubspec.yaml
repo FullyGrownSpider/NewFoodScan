@@ -1,0 +1,32 @@
+name: foodscan
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # https://github.com/svprdga/Text-Recognition-Flutter/blob/master/pubspec.yaml
+  camera: ^0.10.5+2
+  google_mlkit_text_recognition: ^0.8.1
+  permission_handler: ^10.2.0
+
+  # https://pub.dev/packages/path_provider
+  path_provider: ^2.0.15
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
