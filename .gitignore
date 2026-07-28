@@ -3,6 +3,10 @@
 *.log
 *.pyc
 *.swp
+*.lock
+*.bin
+*.properties
+*.probe
 .DS_Store
 .atom/
 .buildlog/
@@ -42,3 +46,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+android/.gradle/7.4/checksums/checksums.lock
+android/.gradle/7.4/checksums/md5-checksums.bin
+android/.gradle/7.4/checksums/sha1-checksums.bin
+android/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock
+android/.gradle/7.4/dependencies-accessors/gc.properties
+android/.gradle/7.4/fileChanges/last-build.bin
+android/.gradle/7.4/gc.properties
+android/local.properties
+ios/Runner/GeneratedPluginRegistrant.h

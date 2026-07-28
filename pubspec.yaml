@@ -5,16 +5,16 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.3 <4.0.0'
+  sdk: ^3.10.7
 
 dependencies:
   flutter:
     sdk: flutter
 
   # https://github.com/svprdga/Text-Recognition-Flutter/blob/master/pubspec.yaml
-  camera: ^0.10.5+2
-  google_mlkit_text_recognition: ^0.8.1
-  permission_handler: ^10.2.0
+  camera: ^0.12.0+2
+  google_mlkit_text_recognition: ^0.16.0
+  permission_handler: ^12.0.3
 
   # https://pub.dev/packages/path_provider
   path_provider: ^2.0.15
@@ -24,9 +24,25 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^2.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
-
+  assets:
+    - icons/
+  fonts:
+   - family: JetbrainsMonoNL
+     fonts:
+      - asset: fonts/JetBrainsMono-Regular.ttf
+      - asset: fonts/JetBrainsMono-Bold.ttf
+        weight: 700
   uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "F:\\Programming\\blagenda_flutter\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  windows:
+    generate: true
+    image_path: "F:\\Programming\\blagenda_flutter\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    icon_size: 256 # min:48, max:256, default: 48

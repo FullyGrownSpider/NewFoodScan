@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foodscan/Screens/scan_screen.dart';
+
+import 'Screens/scan_screen.dart';
 
 void main() {
   runApp(const App());
