@@ -236,6 +236,28 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
     "haver"
   ];
 
+  final List<String> _toLookForNoor = [
+    "cocamidopropyl betaïne",
+    "cocamidopropyl betaine",
+    "betaine",
+    "betaïne",
+    "cocamidopropyl",
+    "kathon",
+    "kathon cg",
+    "kathon 886",
+    "methylchloroisothiazolinone",
+    "methylisothiazolinone",
+    "chloro",
+    "methyl",
+    "isothiazolin",
+    "benzithiazolinon",
+    "ethylamino",
+    "benzithiazole",
+    "isothiazolinon",
+    "mci",
+    "mi"
+    ];
+
   //https://www.koemelkallergie.nl/Neocate-bij-koemelkallergie/Starten-met-bijvoeding/Met-welke-producten-moet-ik-oppassen
   final List<String> _toLookForMALK = [
     "karnemelk",
@@ -279,7 +301,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
   void textUpdate(String newText) {
     //check text for things you should check for in the text
     var calc =
-        '${_findStuff(_toLookForGLUT, newText)}\n${_findStuff(_toLookForMALK, newText)}\n${_findStuff(_toLookForMSG, newText)}';
+        '${_findStuff(_toLookForGLUT, newText)}\n${_findStuff(_toLookForMALK, newText)}\n${_findStuff(_toLookForMSG, newText)}\n${_findStuff(_toLookForNoor, newText)}';
     calc = calc.trim().replaceAll('\n\n', '\n');
     var calcList = calc.split('\n');
     var valcList = currentList.split('\n');
